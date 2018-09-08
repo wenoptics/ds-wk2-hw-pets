@@ -44,11 +44,20 @@ public abstract class Pet {
         return species;
     }
 
+
+    /**
+     * Set the specie of the pet (visible only to )
+     * @param species
+     */
+    protected void setSpecies(Species species) {
+        this.species = species;
+    }
+
     /**
      * Returns the sound of the pet
      * @return      a sound the pet would make
      */
-    public String Say() {
+    public void Say() {
         throw new NotImplementedException();
     }
 
